@@ -1,0 +1,53 @@
+p.menu {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1::first-letter {
+    color: black;
+    font-size: 75px;
+}
+
+p.texto::first-line {
+    color: red;
+}
+
+div.enlaces a:link {
+    background-color: white;
+    color: blue;
+}
+
+body {
+    background-color: lightblue;
+}
+
+img.imagen {
+    float: right;
+    position: relative;
+    bottom: 50px;
+}
+
+a.elemento_menu:hover {
+    color: red;
+    background-color: yellow;
+}
+
+p.productos::before {
+    content: counter(cuenta-ciclos)". ";
+    counter-increment: cuenta-ciclos;
+}
+
+h2.counter {
+    counter-reset: cuenta-ciclos;
+}
+
+a.visitado:visited {
+    background-color: rgb(0, 0, 155);
+}
+
+a.novisitado:link {
+    background-color: white;
+}
